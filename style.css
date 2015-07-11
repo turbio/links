@@ -1,0 +1,306 @@
+
+/*prevents the default spacing around the page along with setting the font*/
+body{
+	padding: 0;
+	margin: 0;
+	background: #EEE;
+	/* font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; */
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	/*overflow: hidden;*/
+}
+
+hr{
+	border: 0;
+	height: 1px;
+	background: #DDD;
+	width: 98%;
+	/*box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);*/
+}
+
+/*holds eventhing*/
+#page{
+	padding: 0;
+	position: relative;
+}
+
+/*everything in the centered box*/
+#content{
+	/*float: left;*/
+	margin-left: auto;
+	margin-right: auto;
+
+	/*background: #FFF;*/
+	box-shadow: 0 0 5px #888;
+
+	position: relative;
+	overflow: hidden;
+}
+
+@media (max-width: 32em){
+	#content{
+		width: 100%;
+	}
+}
+
+@media (min-width: 32em){
+	#content{
+		width: 32em;
+	}
+}
+
+
+#storyBox{
+	color: #333;
+	padding: 1em;
+
+	font-weight: normal;
+	font-size: 1.5em;
+}
+
+/*large text at the top of the page*/
+#titleBox{
+	font-size: 2em;
+	color: white;
+	text-align: center;
+	margin: 1em;
+	font-weight: 100;
+	/*text-shadow: 0 0 5px #888;*/
+}
+
+/*top 20% of the page has a blue background*/
+#bgTopColor{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 20%;
+	width: 100%;
+	background: #2196F3;
+	z-index: -1;
+}
+
+/*in case the bgTopColor doesn't go down far enough,
+ *this should keep the title readable*/
+#bgTitleColor{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 10em;
+	width: 100%;
+	background: #2196F3;
+	z-index: -1;
+}
+
+#newChoiceContainer{
+	overflow: hidden;
+}
+
+#newChoiceEntryContainerContainer{
+	margin-right: 5em;
+	width: auto;
+}
+
+#newChoiceEntryContainer{
+	width: 100%;
+}
+
+#newChoiceEntry{
+	padding: 5px;
+	width: 100%;
+	border: solid;
+	border-color: #666;
+	border-width: 2px;
+
+	font-size: 12pt;
+	height: 2.1em;
+	outline: 0;
+}
+
+form{
+	margin-bottom: 0 !important;
+}
+
+#newChoiceSubmit{
+	-webkit-transition: background .2s;
+	position: relative;
+}
+
+#newChoiceSubmit:hover{
+	background: #3275e4;
+}
+
+.optionBox{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+
+	padding: .75em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+
+	background: #FFF;
+
+	-webkit-transition: background 0.4s, box-shadow 0.3s;
+	transition: background 0.4s, box-shadow 0.3s;
+}
+
+.clickable{
+	cursor: pointer;
+}
+
+.optionBox:hover{
+	background: #F8F8F8;
+	/*box-shadow: 0 0 10px #AAA;*/
+}
+
+.button{
+	float: right;
+	cursor: pointer;
+	background: #4285f4;
+	padding: .5em;
+	border-radius: 0.2em;
+	box-shadow: 0 0 10px #AAA;
+	color: white;
+}
+
+#link_table  a{
+	color: black;
+	text-decoration: underline;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+form{
+	color: black;
+}
+
+input{
+	padding: 0.3em;
+	color: black;
+}
+
+.dialog_title{
+	padding: 0.5em;
+	font-size: 2em;
+}
+
+.dialog{
+	float: left;
+	/*margin: 2em;*/
+	background: #FFF;
+	color: #000;
+	box-shadow: 0px 0px 5px #888;
+}
+
+.dialog_pad{
+	padding: 1em;
+}
+
+#login_dialog{
+	float: left;
+	padding: 10px;
+	margin: 10px;
+	background: white;
+	box-shadow: 0px 0px 25px #888;
+}
+
+#fail_box{
+	padding: 10px;
+	color: white;
+	background: rgba(255, 0, 0, 0.5);
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(255, 0, 0, 0.6);
+}
+
+table{
+	border-collapse: collapse;
+}
+
+td{
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+#shaded_row{
+	background-color: #EEE;
+}
+
+#title_row{
+	background-color: #CCC;
+}
+
+#link_table{
+	margin-right: auto;
+	margin-left: auto;
+	width: 64em;
+	background: #fff;
+	/*margin-top: 4em;*/
+	box-shadow: 0px 0px 5px #888;
+}
+
+#top_bar{
+	padding: 1em;
+	overflow: hidden;
+}
+
+#user_button{
+	float: right;
+	padding: 1em;
+	color: white;
+	-webkit-transition: background .2s;
+	transition: background .2s;
+	background: rgba(0, 0, 0, .2);
+}
+
+#user_button:hover{
+	background: rgba(0, 0, 0, .3);
+}
+
+.bar_buttons_nohl{
+	float: left;
+	margin-top: 1em;
+	margin-right: 0.2em;
+	padding: 5px;
+}
+
+.bar_buttons{
+	margin-top: 1em;
+	margin-right: 0.2em;
+	/*margin-left: 1em;*/
+	float: left;
+	padding: 5px;
+	color: white;
+	font-size: 1.5em;
+
+	-webkit-transition: background .2s;
+	transition: background .2s;
+}
+
+.bar_buttons:hover{
+	background: rgba(0, 0, 0, .2);
+	border-radius: 0.1em;
+}
+
+.data_row{
+	-webkit-transition: border-width .2s;
+	transition: border-width .2s;
+	border-width: 0;
+	border-style: solid;
+}
+
+.data_row:hover{
+	border-width: 3px;
+	/*background: rgba(0, 0, 0, .5);*/
+	/*background: #CCC !important;*/
+}
+
+#search{
+	margin-top: .35em;
+	font-size: 1em;
+	/*height: 1.5em;*/
+}
